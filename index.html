@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="main.css">
+		<title>FE test</title>
+	</head>
+	<body>
+
+	<table id="dinamicno">
+	<tbody>
+		<tr>
+			<th></th>
+			<th>Altitude</th>
+			<th>Flying core number</th>
+		</tr>
+		<template id="template">
+		<tr>
+			<td data-id="{{id}}" class="first"><img src="{{icon}}" alt=""></td>
+			<td>{{altitude}}</td>
+			<td>{{icaos}}</td>
+		</tr>
+		</template>
+		</tbody>
+	</table>
+
+<div id="overlay">
+	<div class="container">
+<template id="template2">
+	<img src="https://logo.clearbit.com/{{airplane}}.com" alt="logo-picture" id="logo" class="slide-in">
+	<h1><span class="grey">Airplane Manufacturer:</span>{{airplane}}</h1>
+	<ul>
+		<li class="opasiti">Model<br><span class="blackbold">{{model}}</span></li>
+		<li class="opasiti">Destination<br><span class="blackbold">{{destination}}</span></li>
+		<li class="opasiti">Flight Origin airport<br><span class="blackbold">{{origin}}</span></li>
+	</ul>
+	<button id="izadji">X</button>
+</template>
+</div>
+</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

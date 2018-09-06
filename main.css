@@ -1,0 +1,186 @@
+body{
+	margin:0;
+	padding: 0;
+}
+
+table{
+	width: 70%;
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+}
+table,tr,td,th{
+	padding: 20px;
+	color: white;
+	border-collapse: collapse;
+	font-size: 18px;
+	background-color: linear-gradient(top, #3c3c3c 0%, #222222 100%);
+	background: -webkit-linear-gradient(top, #3c3c3c 0%, #222222 100%);
+}
+td:first-child{
+	cursor: pointer;
+}
+td:first-child:hover{
+background:orange;
+}
+td,th{
+	border: 3px solid orange;
+}
+th:first-child{
+	border: none;
+}
+img{
+	width: auto;
+	height: 50px;
+}
+#overlay{
+	width: 100%;
+	height: 90%;
+	position: fixed;
+	top: 5%;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: none;
+}
+
+.container{
+	text-align: center;
+	position: relative;
+}
+ul{
+	list-style: none;
+}
+#logo{
+	position: absolute;
+	transform: translate(-50%,-150%);
+	-webkit-transform: translate(-50%,-150%);
+}
+img[alt=logo-picture]{
+	color: white;
+}
+h1{
+	font-size: 60px;
+	padding-top: 100px;
+	color:white;
+}
+li{
+	margin-bottom: 15px;
+	margin-right: 15px;
+	font-size: 25px;
+	color:grey;
+}
+.blackbold{
+	font-weight: 700;
+	color:white;
+}
+.grey{
+	color:grey;
+}
+.slide-in {
+    animation: slide-in 1s forwards;
+    -o-animation: slide-in 1s forwards;
+    -webkit-animation: slide-in 1s forwards;
+}
+.opasiti{
+	opacity: 0;
+	animation: opasiti 1s 1s forwards;
+	-o-animation: opasiti 1s 1s forwards;
+	-webkit-animation:opasiti 1s 1s forwards;
+}
+#izadji{
+width: 25px;
+height: 25px;
+position: absolute;
+top: -10px;
+right:35px;
+background-color: white;
+cursor: pointer;
+}
+@keyframes slide-in {
+    100% { 
+    	transform: translate(-50%,20%); 
+    }
+}
+
+@-webkit-keyframes slide-in {
+    100% { 
+    	-webkit-transform: translate(-50%,20%); 
+    }
+}
+@keyframes opasiti{
+	100%{
+		opacity:1;
+	}
+}
+@-webkit-keyframes opasiti{
+	100%{
+		transform: opacity(1);
+	}
+}
+@media(max-width: 576.98px){
+	h1{
+		font-size: 22px;
+	}
+	ul{
+		padding-right: 15px;
+	}
+}
+@media(min-width: 767.98px) and (max-width: 992px){
+	h1{
+		font-size: 40px;
+	}
+	li{
+		font-size: 20px;
+	}
+	#logo{
+		width: 70px;
+		height: 70px;
+	}
+}
+@media(min-width: 767.98px) and (max-width: 1200px){
+	li{
+		font-size: 25px;
+	}
+	#logo{
+		width: 100px;
+		height: 100px;
+	}
+	h1{
+		padding-top: 160px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 767.98px) and (max-width: 1199.98px){
+	table,tr,td,th{
+		font-size: 32px;
+	}
+}
